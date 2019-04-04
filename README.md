@@ -15,6 +15,8 @@ opkg install rp-pppoe-server.ipk
 
 启用pppoe-server命令
 
+killall pppoe-server
+
 pppoe-server -k -I br-lan
 
 文件名:
