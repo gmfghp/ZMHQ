@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=15
+
+start()
+
+{
+
+	(sh /root/zmhq/ZMHQ.sh &)
+	logger -t ZMHQ "zmhq listen start"
+
+}
